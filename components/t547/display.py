@@ -50,3 +50,4 @@ async def to_code(config):
     cg.add_build_flag("-DBOARD_HAS_PSRAM")
 
     cg.add_library("LilyGoEPD47", repository="https://github.com/Xinyuan-LilyGO/LilyGo-EPD47", version="v1.0.1")
+    cg.add_build_flag("-I$PROJECT_DIR/.esphome/build/$NAME/.piolibdeps/LilyGoEPD47/src")
